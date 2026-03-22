@@ -29,6 +29,8 @@ test.describe("App Shell & Navigation", () => {
 
     // All nav items present — use the link role to avoid ambiguity
     const navLinks = [
+      "Today",
+      "Focus Mode",
       "Dashboard",
       "Grades",
       "Assignments",
@@ -37,6 +39,7 @@ test.describe("App Shell & Navigation", () => {
       "Discussions",
       "Notifications",
       "Parent Catch-Up",
+      "ADHD Support",
     ];
 
     for (const link of navLinks) {
@@ -337,6 +340,9 @@ test.describe("All Pages Load Without Crash", () => {
     { path: "/discussions", title: "Discussions" },
     { path: "/notifications", title: "Notifications" },
     { path: "/catch-up", title: "Parent Catch-Up" },
+    { path: "/today", title: "Today" },
+    { path: "/focus", title: "Focus Mode" },
+    { path: "/adhd-support", title: "ADHD Support" },
   ];
 
   for (const p of pages) {
